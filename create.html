@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
+    <script>
+        //fake tracking script here
+    </script>
+       <link rel="shortcut icon" href="/media/favicon.ico"/>
 </head>
 
 <body>
@@ -30,6 +34,18 @@
 
     <main>
         <h2>Create your Account</h2>
+
+        <canvas id="canvas"></canvas>
+
+        <script>
+            const canvas = document.getElementById("canvas");
+            const ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.rect(30, 30, 100, 100);
+            ctx.fillStyle = "black";
+            ctx.fill();
+        </script>
 
         <section>
             <form action="/blog.html">

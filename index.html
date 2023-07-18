@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>402</title>
+    <script>
+        //fake tracking script here
+    </script>
+   <link rel="shortcut icon" href="/media/favicon.ico"/>
 </head>
 
 <body>
@@ -31,10 +35,26 @@
         <h2> What is 402?</h2>
 
         <section>
-            <p>402 is a framework site designed to get users to share their projects on a site that respects <strong>privacy</strong> and lowers the barriers of entry to
+            <p>402 is a <em>framework</em> website designed to get users to share their projects on a site that respects <strong>privacy</strong> and lowers the barriers of entry to
             knowledge</p>
 
+            <b>interact for audio</b><br>
             <audio src="/media/speak.mp3" controls></audio>
+        </section>
+
+        <section>
+            <button onClick="show()">Show surprise?</button>
+
+            <template id="surprise"><p>a surprise</p></template>
+
+            <script>
+                function show() {
+                  let templateSurprise = document.getElementById("surprise");
+                  let surprise = document.createElement("div");
+                  surprise.innerHTML = templateSurprise.innerHTML;
+                  document.body.appendChild(surprise);
+                }
+              </script>
         </section>
     </main>
 

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article 1</title>
+    <script>
+        //fake tracking script here
+    </script>
+       <link rel="shortcut icon" href="/media/favicon.ico"/>
 </head>
 
 <body>
@@ -26,21 +30,31 @@
         <h2>PB&J</h2>
 
         <section>
-            <p>pb & j is the best sandwitch (below is a real poll) here's how you make it
+            <p>pb & j is the best sandwitch (below is a <i>real</i> poll) here's how you make it</p>
+            <aside>
+                <p>poll results may have been fabricated</p>
+            </aside>
 
             <table>
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
                 <tr>
-                    <th>Do you like pb&j</th>
+                  <th>Do you like pb&j</th>
+                  <th>Number of people</th>
                 </tr>
                 <tr>
-                    <td>Yes</td>
-                    <td>5</td>
+                  <td>Yes</td>
+                  <td>5</td>
                 </tr>
                 <tr>
-                    <td>No</td>
-                    <td>0</td>
+                  <td>No</td>
+                  <td>0</td>
                 </tr>
-            </table>
+                <caption>totally real PB&J poll</caption>
+              </table>
+              
         </section>
 
         <section>
@@ -85,13 +99,22 @@
         </section>
 
         <section>
+            <label for="ratingList">Your experience of the article in one word could be described as:</label>
+            <input list="ratings" id="ratingList" name="ratingList" />
+            <datalist id="ratings">
+                <option value="Good"></option>
+                <option value="Bad"></option>
+                <option value="Mid"></option>
+            </datalist>
+
             <p>add a comment</p>
             <textarea></textarea>
             <button>submit comment</button>
         </section>
+
     </main>
 
-    <footer>© Vincent Sgherzi 2023</footer>
+    <footer>© Vincent Sgherzi 2023 this recipe was inspired by  <a href="https://en.wikipedia.org/wiki/Peanut_butter_and_jelly_sandwich">recipe</a> </footer>
 </body>
 
 </html>
