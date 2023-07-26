@@ -61,6 +61,7 @@ body{
     width: 11rem;
     margin-bottom: 7px;
     cursor: pointer;
+    color: black;
 }
 
 .headerNav{
