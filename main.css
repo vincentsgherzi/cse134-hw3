@@ -43,7 +43,7 @@ body{
 @media(max-width: 850px){
     .header{
         grid-template-columns: none;
-        grid-template-rows: fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -55,7 +55,7 @@ body{
 }
 
 .headerButton{
-    border: var(--thinBorder) black;
+    border: var(--thinBorder, 1px) black;
     background: transparent;
     height: 3rem;
     width: 11rem;
