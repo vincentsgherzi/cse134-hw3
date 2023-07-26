@@ -27,6 +27,10 @@ body{
     }
 }
 
+:root {
+    --thinBorder: 1px solid;
+}
+
 .title {
     font-size: 5rem;
 }
@@ -34,6 +38,13 @@ body{
 .header{
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+@media(max-width: 850px){
+    .header{
+        grid-template-columns: none;
+        grid-template-rows: fr 1fr;
+    }
 }
 
 .headerUl{
@@ -44,7 +55,7 @@ body{
 }
 
 .headerButton{
-    border: 1px solid black;
+    border: var(--thinBorder) black;
     background: transparent;
     height: 3rem;
     width: 11rem;
