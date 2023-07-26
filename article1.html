@@ -4,21 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article 1</title>
+    <title>About Me.</title>
     <script>
-        //fake tracking script here
+            //fake tracking script here
     </script>
-       <link rel="shortcut icon" href="/media/favicon.ico">
+    <link rel="shortcut icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        article-card {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>402</h1>
-        <nav>
-            <ul>
+    <hr>
+    <header class="header">
+        <h1 class="title">About <br> Me.</h1>
+
+        <nav class="headerNav">
+            <ul class="headerUl">
+                <li>
+                    <form action="/blog.html">
+                        <button class="headerButton">Blog.</button>
+                    </form>
+                </li>
                 <li>
                     <form action="/index.html">
-                        <button>Home</button>
+                        <button class="headerButton">Resume.</button>
                     </form>
                 </li>
             </ul>
@@ -27,41 +42,50 @@
     <hr>
 
     <main>
-        <h2>PB&J</h2>
+        <article-card>
+            <picture style="margin: 0 auto">
+                <img src="/media/img.jpg" alt="beach" width="90%">
+            </picture>
+            <audio src="/media/speak.mp3" controls></audio>
 
-        <section>
-            <h3>about</h3>
-            <p>pb & j is the best sandwitch (below is a <i>real</i> poll) here's how you make it</p>
-            <aside>
-                <p>poll results may have been fabricated</p>
-            </aside>
-
+            <div style="margin:3em"></div>
+            Etiam at leo et nulla ullamcorper finibus aliquam consectetur nulla. Proin maximus velit urna, accumsan
+            laoreet
+            felis venenatis in. Donec convallis, quam vitae posuere convallis, nisl ex porta eros, nec accumsan libero
+            eros in lacus.
+            Phasellus ultrices, sem vitae lacinia scelerisque, odio risus sagittis ante, quis luctus enim felis a orci.
+            In dignissim
+            consectetur tortor. Ut rutrum aliquam <em>pellentesque.</em>
+            <br>
+            <div style="margin:3em"></div>
+            <code>sudo rm -rf /</code>
+            <div style="margin:3em"></div>
+            <br>
+            <aside>please do <b>not</b> actually run this command above</aside>
+            <div style="margin:3em"></div>
             <table>
                 <caption>totally real PB&J poll</caption>
                 <colgroup>
-                  <col span="2">
+                    <col span="2">
                 </colgroup>
                 <tr>
-                  <th>Do you like pb&j</th>
-                  <th>Number of people</th>
+                    <th>Do you like pb&j</th>
+                    <th>Number of people</th>
                 </tr>
                 <tr>
-                  <td>Yes</td>
-                  <td>5</td>
+                    <td>Yes</td>
+                    <td>5</td>
                 </tr>
                 <tr>
-                  <td>No</td>
-                  <td>0</td>
+                    <td>No</td>
+                    <td>0</td>
                 </tr>
-              </table>
-              
-              
-        </section>
-
-        <section>
-            <h3>instructions</h3>
-            <p>follow the steps below to make</p>
-
+            </table>
+            <div style="margin:3em"></div>
+            <figure>
+                <img src="/media/pb.jpg" alt="Pb&j completed" width="200" height="200">
+                <figcaption>A completed PB&J</figcaption>
+            </figure>
             <ol>
                 <li>Buy bread</li>
                 <li>Buy jam</li>
@@ -69,40 +93,74 @@
                 <li>
                     <p>type this code into your terminal</p>
                     <code>
-                        sudo rm -rf /
-                     </code>
+                            sudo rm -rf /
+                         </code>
                 </li>
                 <li>Buy new computer</li>
                 <li>Order pb&j from ralphs on door dash</li>
                 <li>enjoy</li>
             </ol>
-
-            <figure>
-                <img src="/media/pb.jpg" alt="Pb&j completed" width="200" height="200">
-                <figcaption>A completed PB&J</figcaption>
-            </figure>
-        </section>
-
-        <section>
-            <h3>aftermath</h3>
-            <p>here is a vid of my apartment flooding after making pb&j</p>
+            Quisque sit amet elit lectus. Mauris id tellus bibendum, placerat tortor
+            nec, interdum augue.<em>Curabitur</em> eleifend interdum mauris, nec rutrum urna posuere quis. In luctus
+            diam at
+            lacus mollis, at aliquet
+            augue rhoncus. Vestibulum mattis, tellus sit amet euismod <span style="color: red;">here is some red
+                text</span> pretium, dui leo aliquet velit, vitae aliquet leo dolor at dolor.
+            Morbi gravida pharetra orci, sit amet dictum lacus interdum placerat. Sed eu dolor nisl.
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Daily Rick Roll</a>
             <video width="300" height="300" controls>
                 <source src="/media/mov.ogv" type="video/ogg">
                 <source src="/media/mov.mp4" type="video/mp4">
             </video>
 
-            <details>
-                <summary>Who's the best chef around?</summary>
-                Me
-            </details>
+        </article-card>
 
-            <p>looking for more recepies? check the iframe below</p>
-            <iframe width="200" height="200" src="/jk.html"></iframe>
+        <details>
+            <summary>Junk Tags From HW2</summary>
+            <p>Here's my fav article in an i frame, it's mine! </p>
+            <iframe src="/iframe.html" width="150" height="150"></iframe>
 
-        </section>
+            <p>Example of a form field</p>
+            <form action="/blog.html">
+                <label for="name">name</label>
+                <input type="text" id="name" required>
 
-        <section>
-            <h3>rate my recipe</h3>
+                <label for="password">password</label>
+                <input type="text" id="password" required>
+
+                <label for="age">age</label>
+                <input type="number" id="age" min="0" required>
+
+                <label for="theme">theme</label>
+                <select id="theme">
+                    <optgroup label="West Coast">
+                        <option value="sanDiego">San Diego</option>
+                        <option value="losAngeles">Los Angeles</option>
+                    </optgroup>
+
+                    <optgroup label="East Coast">
+                        <option value="boston">Boston</option>
+                        <option value="newYork">New York</option>
+                    </optgroup>
+                </select>
+
+                <fieldset>
+                    <legend>Pick your favorite animal</legend>
+
+                    <input type="radio" id="cat" name="animal" value="🐱">
+                    <label for="cat">🐱</label>
+
+                    <input type="radio" id="dog" name="animal" value="🐕">
+                    <label for="dog">🐕</label>
+
+                    <input type="radio" id="snake" name="animal" value="🐍">
+                    <label for="dog">🐍</label>
+                </fieldset>
+
+                <input type="submit" value="Create Account">
+
+            </form>
+
             <label for="ratingList">Your experience of the article in one word could be described as:</label>
             <input list="ratings" id="ratingList" name="ratingList">
             <datalist id="ratings">
@@ -111,14 +169,64 @@
                 <option value="Mid"></option>
             </datalist>
 
-            <p>add a comment</p>
-            <textarea></textarea>
-            <button>submit comment</button>
-        </section>
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <rect x="0" y="0" width="100" height="100" fill="black" />
+                <rect x="20" y="20" width="60" height="60" fill="white" />
+                <rect x="40" y="40" width="20" height="20" fill="black" />
+            </svg>
 
+
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" fill="black" />
+                <circle cx="50" cy="50" r="10" fill="white" />
+            </svg>
+
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <rect x="0" y="0" width="100" height="100" fill="black" />
+                <rect x="20" y="20" width="40" height="40" fill="white" />
+                <rect x="60" y="20" width="40" height="40" fill="white" />
+            </svg>
+
+            <canvas id="canvas"></canvas>
+
+            <script>
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext("2d");
+
+                ctx.beginPath();
+                ctx.rect(30, 30, 100, 100);
+                ctx.fillStyle = "black";
+                ctx.fill();
+            </script>
+
+        </details>
     </main>
 
-    <footer>© Vincent Sgherzi 2023 this recipe was inspired by  <a href="https://en.wikipedia.org/wiki/Peanut_butter_and_jelly_sandwich">recipe</a> </footer>
+    <footer>
+        <h3>add comment</h3>
+        <textarea></textarea>
+        <button onClick="show()">Submit</button>
+
+        <template id="newComment">
+            <hr>
+            <p>Comment: blah blah blah</p>
+            <hr>
+        </template>
+
+        <script>
+            function show() {
+                let templateSurprise = document.getElementById("newComment");
+                let surprise = document.createElement("div");
+                surprise.innerHTML = templateSurprise.innerHTML;
+
+                let main = document.getElementsByTagName("main")[0];
+                main.appendChild(surprise)
+
+            }
+        </script>
+        <p>© Vincent Sgherzi 2023</p>
+
+    </footer>
 </body>
 
 </html>
